@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Ping Pong Score keeper</title>
+</head>
+
+<body>
+    <div>
+        <h1>Ping Pong Score Keeper</h1>
+    </div>
+
+
+    <section class="first__container">
+        <div class="name__container">
+            <p>Player 1 Name</p> <input type="text" id="name1Input"> <button id="addN1">Add Name</button>
+        </div>
+        <div class="name__container">
+            <p>Player 2 Name</p> <input type="text" id="name2Input"> <button id="addN2"> Add Name</button>
+        </div>
+    </section>
+
+
+    <section class="container">
+        <div class="col">
+            <p class="col__player" id="player1Name">Player 1</p>
+            <div class="col__points">
+                <p id="player1Score">0</p>
+            </div> <button type="submit" class="add__btn" id="addScoreP1"> + 1</button>
+        </div>
+
+        <div class="col">
+            <p class="points-title">Points to win</p>
+            <form id="form" action=""><input type="text"> <button>Add</button></form>
+            <div class="winner__points">
+                <p id="winnerScore">21</p>
+            </div>
+            <button class="add__btn reset" id="resetBtn">Reset all</button>
+        </div>
+
+
+        <div class="col">
+            <p class="col__player" id="player2Name">Player 2</p>
+            <div class="col__points">
+                <p id="player2Score">0</p>
+            </div> <button class="add__btn" id="addScoreP2"> + 1</button>
+    </section>
+    <script src="main.js"></script>
+</body>
+
+</html>
